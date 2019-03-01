@@ -1,0 +1,74 @@
+*{
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    background-image: linear-gradient(to Right, #3B7BA7, #3B7BA7 50%, white 50%, white);
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+}
+
+/*Colonne de gauche de la page*/
+.aside{
+    width:300px;
+    background-color:#3B7BA7;
+    padding: 50px;
+    margin: 0;
+}
+
+/*Colonne de droite de la page*/
+.main{
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    max-width:700px;
+    background-color:white;
+    padding: 50px;
+}
+
+.header{
+    height: 100vh; /*Applique une hauteur de 100%*/
+}
+
+.avatar{
+    width:100%;
+}
+
+.name{
+    
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.name-firstname{
+    font-weight: bold;
+    color: black;
+    font-size: 60px;
+}
+
+.name-lastname{
+    font-weight: bold;
+    color:#7ba73b;
+    font-size: 60px;
+}
+
+.name-title{
+    margin-top:30px;
+    color:#939393;
+    font-size:30px;
+}
+
+/*Info Daenerys Page 1*/
+.Administratif{
+    position:absolute;
+    bottom: 50px;
+    text-align:center;
+    width: calc(100% - 700px);
+    border-top: solid #939393 1px;
+}
